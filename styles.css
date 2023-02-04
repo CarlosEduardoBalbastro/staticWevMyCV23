@@ -1,0 +1,22 @@
+
+img {
+    filter: grayscale(80%);
+    width: 50%;
+}
+
+
+
+
+
+.icon-contacto:hover{
+    cursor: pointer;
+}
+
+
+
+#_logo {
+    color: rgba(255, 166, 0, 0.849);
+}
+
+
+
