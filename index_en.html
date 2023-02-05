@@ -15,7 +15,7 @@
 <!-- menu navegacion -->
 
   <nav class="navbar navbar-expand-sm bg-gradient text-bg-dark navbar-dark">
-    <div class="container-fluid">
+    <div class="container-fluid" id="home">
 
          <!-- logo github -->
          <a class="navbar-brand mx-3" href="https://github.com/CarlosEduardoBalbastro"> <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-github text-white" viewBox="0 0 16 16">
@@ -47,8 +47,8 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Language</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="/PortfolioArgentinaPrograma/PortfolioFrontEnd/index.html">Castellano</a></li>
-              <li><a class="dropdown-item" href="/PortfolioArgentinaPrograma/PortfolioFrontEnd/index_portugues.html">Portugués</a></li>
+              <li><a class="dropdown-item" href="/index.html">Castellano</a></li>
+              <li><a class="dropdown-item" href="/index_br.html">Portugués</a></li>
               <!-- <li><a class="dropdown-item" href="#">A third link</a></li> -->
             </ul>
           </li>
@@ -71,14 +71,60 @@
         <figcaption class="blockquote-footer">
           DEVELOPER<cite title="Source Title"> FRONTEND JR</cite>
         </figcaption>
-        <button type="button" class="mt-5 btn btn-outline-warning" ><a class="text-decoration-none text-dark " href="/PortfolioArgentinaPrograma/img/CV22_Carlos_Balbastro_FrontEndJR.pdf" download="CV22_Carlos_Balbastro_FrontEndJR">Download CV</a></button>
+        <button type="button" class="mt-5 btn btn-outline-warning" ><a class="text-decoration-none text-dark " href="/PortfolioArgentinaPrograma/img/CV22_Carlos_Balbastro_FrontEndJR.pdf" download="CV22_Carlos_Balbastro_FrontEndJR">Download <span class="fw-semibold">CV</span></a></button>
       </figure>
     </div>
     <div class="col-sm-6">
-      <img src="/PortfolioArgentinaPrograma/img/DSC_1958_perfil_CEB.png" class="w-50 rounded-circle mt-0 pt-0 float-sm-start" alt="Charly Dev" width="100">
+
+   <a type="button"  class="btn text-decoration-none border-0 text-dark" data-bs-toggle="modal" data-bs-target="#imgPerfil">
+            <img src="/img/DSC_1958_perfil_CEB.png" class="w-50 rounded-circle mt-0 pt-0 float-sm-start" alt="Carlos Balbastro FrontEnd" width="100">
+        </a>
       
     </div>
 
+        <!-- Modal -->
+
+        <div class="modal fade" id="imgPerfil" tabindex="-1" aria-labelledby="mumukiModalLabel" aria-hidden="true">
+          
+            <div class="modal-dialog modal-content">
+                <div class="modal-content">
+                   
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-6" id="staticBackdropLabel"><span class="fw-semibold">FrontEnd JR</span> Carlos Eduardo Balbastro</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-sm-8">
+                                <h5>Informacion Personal</h5>
+                    
+                                <ul>
+                                  <li>Nationality: Argentino</li>
+                                  <li>Place of Birth: Paso de Los Libres - Ctes</li>
+                                  <li>Date of Birth: 07/26/1982</li>
+                                  <li>Marital Status: Single</li>
+                                  <li>Children: yes, one</li>
+                                  <li>Residence: Córdoba - Cba</li>
+                                  
+                                </ul>
+                            </div>
+                            <div class="col-sm-4">
+                               
+                                <img src="/img/DSC_1958_perfil_CEB.png" class="w-75 rounded-circle mt-0 pt-0 float-sm-start" alt="Carlos Balbastro FrontEnd"> 
+                            </div>
+                        </div>
+                     
+                     
+                      
+              
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      <!-- <button type="button" class="btn btn-primary">Understood</button> -->
+                    </div>
+                  </div>
+            </div>
+          </div>
 
   </div>
 </div>
@@ -94,13 +140,9 @@
   <a href="#sobreMiHiden" type="button" class="btn text-decoration-none border-0 text-dark" data-bs-toggle="collapse"  ><h3>About me...</h3></a>
 
     <div class="card card-body border-0">
-      <p id="sobreMiHiden" type="text" class="collapse multi-collapse">In 2009 I trained as a Photographer since then I do different jobs such as Photography of Social Events,
-        Portraits, Products, Design and Press. <br>
-         On February 1, 2021 I began to self-taught <b>HTML</b>, <b>CSS</b> and <b>JS</b>. <br>
-        In 2022 I received a Scholarship from the <b>i2T Company</b>
-        on "Fundamentals of Programming" and I successfully concluded. <br>
-        I'm currently studying
-   the "Second Stage of Argentina Program <b>#YoProgramo</b>".</p>
+      <p id="sobreMiHiden" type="text" class="collapse multi-collapse">On February 1, 2021, I began to study <span class="fw-semibold">HTML</span>, <span class="fw-semibold">CSS</span> and <span class="fw-semibold">JS</span> in a self-taught way, I took different courses that I found on the web to complement.
+        Ten years ago I developed working as a Photographer and now I want to take that experience to the field of technology as a <span class="fw-semibold">Front End Developer</span>. <br>
+        My main objective is to learn, grow and contribute as much as I can to the Company.</p>
     </div>
 
    
@@ -130,7 +172,7 @@
   <!-- boton que genera modal -->
 
   <a type="button"  class="btn text-decoration-none border-0 text-dark" data-bs-toggle="modal" data-bs-target="#certificadoMumuki">
-    "#SeProgramar" course Developed by CESSI, i2T and Mumuki
+    "<span class="fw-semibold">#SeProgramar</span>" course Developed by CESSI, i2T and Mumuki
     duration 95 hours</a> 
 
 
@@ -145,7 +187,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" arial-label="Close"></button>
           </div>
           <div class="modal-body w-100">
-            <img src="/PortfolioArgentinaPrograma/img/i2t_etapa_1_2022_CarlosBalbastro.jpg" class="img-fluid mx-auto d-block w-100" alt="Certificado Mumuki">
+            <img src="/img/i2t_etapa_1_2022_CarlosBalbastro.jpg" class="img-fluid mx-auto d-block w-100" alt="Certificado Mumuki">
           </div>
         </div>
       </div>
@@ -164,7 +206,7 @@
 
 <a type="button"  class="btn text-decoration-none border-0 text-dark" data-bs-toggle="modal" data-bs-target="#certificadoScrum">
 
-    Course "Project Management with Agile Methodologies" of FUNDACIÓN
+    Course "<span class="fw-semibold">Project Management with Agile Methodologies</span>" of FUNDACIÓN
     TELEFONICA MOVISTAR whose hourly charge was 40 hours
 </a>
 
@@ -180,7 +222,7 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" arial-label="Close"></button>
         </div>
         <div class="modal-body w-100">
-          <img src="/PortfolioArgentinaPrograma/img/FT AR - Certificado.jpg" class="img-fluid mx-auto d-block w-100" alt="fundacion telefonica">
+          <img src="/img/FT AR - Certificado.jpg" class="img-fluid mx-auto d-block w-100" alt="fundacion telefonica">
         </div>
       </div>
     </div>
@@ -192,7 +234,7 @@
 
    <!-- boton que genera modal  -->
    <a type="button" class="btn text-decoration-none border-0 text-dark" data-bs-toggle="modal" data-bs-target="#certificadoUnc">
-    Course "Web Design and Development" dictated by the UNIVERSITY
+    Course " <span class="fw-semibold">Web Design and Development</span>" dictated by the UNIVERSITY
     TECNOLÓGICA DE CÓRDOBA whose workload was 20 hours
    </a>
    
@@ -207,7 +249,7 @@
            <button type="button" class="btn-close" data-bs-dismiss="modal" arial-label="Close"></button>
          </div>
          <div class="modal-body w-100">
-           <img src="/PortfolioArgentinaPrograma/img/certificado_ub5c7RmqqReqmdYjH4Z_29537373.jpg" class="img-fluid mx-auto d-block w-100" alt="certificado UTN">
+           <img src="/img/certificado_ub5c7RmqqReqmdYjH4Z_29537373.jpg" class="img-fluid mx-auto d-block w-100" alt="certificado UTN">
          </div>
        </div>
      </div>
@@ -220,7 +262,7 @@
 <!-- boton modal -->
 
 <a type="button" class="btn text-decoration-none border-0 text-dark" data-bs-toggle="modal" data-bs-target="#certificadoPolitecnico">
-    Course "Web Design and Development" organized by the SECRETARIAT
+    Course "<span class="fw-semibold">Web Design and Development</span>" organized by the SECRETARIAT
     PROMOTION OF EMPLOYMENT OF THE MUNICIPALITY OF CÓRDOBA
     dictated by professionals from the NATIONAL TECHNOLOGICAL UNIVERSITY
 </a>
@@ -234,7 +276,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body w-100">
-        <img src="/PortfolioArgentinaPrograma/img/certificado_politecnico.jpg" class="img-fluid mx-auto d-block w-100" alt="certificado politecnico">
+        <img src="/img/certificado_politecnico.jpg" class="img-fluid mx-auto d-block w-100" alt="certificado politecnico">
       </div>
     </div>
   </div>
@@ -249,7 +291,7 @@
 <!-- boton modal -->
 
 <a type="button" class="btn text-decoration-none border-0 text-dark" data-bs-toggle="modal" data-bs-target="#fundacionTelefonica1">
-    Course "Web Design with HTML5 and CSS3" dictated by FUNDACIÓN TELEFÓNICA
+    Course "<span class="fw-semibold">Web Design with HTML5 and CSS3</span>" dictated by FUNDACIÓN TELEFÓNICA
     MOVISTAR whose hourly load was 30 hours
 </a>
 
@@ -262,7 +304,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body w-100">
-        <img src="/PortfolioArgentinaPrograma/img/FT AR - Diseño Web con HTML5 + CSS.jpg" class="img-fluid mx-auto d-block w-100" alt="certificado fundacion telefonica">
+        <img src="/img/FT AR - Diseño Web con HTML5 + CSS.jpg" class="img-fluid mx-auto d-block w-100" alt="certificado fundacion telefonica">
       </div>
     </div>
   </div>
@@ -276,7 +318,7 @@
 <!-- boton modal -->
 
 <a type="botton" class="btn text-decoration-none border-0 text-dark" data-bs-toggle="modal" data-bs-target="#fundacionTelefonica2">
-    You have successfully passed the 30 hours course "Introduction to Programming"
+    You have successfully passed the 30 hours course "<span class="fw-semibold">Introduction to Programming</span>"
     Dictated by TELEFÓNICA MOVISTAR FOUNDATION</a>
 
 <!-- modal -->
@@ -289,7 +331,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body w-100">
-        <img src="/PortfolioArgentinaPrograma/img/FT AR - Introducción a la Programación.jpg" alt="Introducción a la Programación" class="img-fluid mx-auto d-block w-100">
+        <img src="/img/FT AR - Introducción a la Programación.jpg" alt="Introducción a la Programación" class="img-fluid mx-auto d-block w-100">
       </div>
     </div>
   </div>
@@ -299,7 +341,7 @@
 <h2 class="blockquote-footer my-2">2021</h2>
 
 <a type="button" class="btn text-decoration-none border-0 text-dark" data-bs-toggle="modal" data-bs-target="#fundamentosProgramacionTelefonica">
-  Course "Fundamentals of Programming" of TELEFÓNICA MOVISTAR FOUNDATION
+  Course "<span class="fw-semibold">Fundamentals of Programming</span>" of TELEFÓNICA MOVISTAR FOUNDATION
 whose hourly load was 40 hours
 </a>
 
@@ -313,7 +355,7 @@ whose hourly load was 40 hours
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body w-100">
-        <img src="/PortfolioArgentinaPrograma/img/FT AR - Fundamentos de Programación.jpg" alt="Introducción a la Programación" class="img-fluid mx-auto d-block w-100">
+        <img src="/img/FT AR - Fundamentos de Programación.jpg" alt="Introducción a la Programación" class="img-fluid mx-auto d-block w-100">
       </div>
     </div>
   </div>
@@ -326,7 +368,7 @@ whose hourly load was 40 hours
 <!-- boton modal -->
 
 <a type="button" class="btn text-decoration-none border-0 text-dark" data-bs-toggle="modal" data-bs-target="#habilidadEmpleo">
-    He has successfully passed the Course "Skills for Employment" of
+    He has successfully passed the Course "<span class="fw-semibold">Skills for Employment</span>" of
     TELEFÓNICA MOVISTAR FOUNDATION whose hourly charge was 30 hours
 </a>
 
@@ -340,7 +382,7 @@ whose hourly load was 40 hours
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body w-100">
-        <img src="/PortfolioArgentinaPrograma/img/FT AR - Habilidades para el Empleo.jpg" alt="Introducción a la Programación" class="img-fluid mx-auto d-block w-100">
+        <img src="/img/FT AR - Habilidades para el Empleo.jpg" alt="Introducción a la Programación" class="img-fluid mx-auto d-block w-100">
       </div>
     </div>
   </div>
@@ -353,7 +395,7 @@ whose hourly load was 40 hours
 
 <a type="button" class="btn text-decoration-none border-0 text-dark" data-bs-toggle="modal" data-bs-target="#graphicDesign">
   
-I certify that you have attended and completed the course "Fundamentals of Graphic Design" of 18hs
+I certify that you have attended and completed the course "<span class="fw-semibold">Fundamentals of Graphic Design</span>" of 18hs
 in Center for Training and Professional Development IT Education
 </a>
 
@@ -367,7 +409,7 @@ in Center for Training and Professional Development IT Education
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body w-100">
-        <img src="/PortfolioArgentinaPrograma/img/Certificado Fundamentos del Diseño Grafico.jpg" alt="Introducción a la Programación" class="img-fluid mx-auto d-block w-100">
+        <img src="/img/Certificado Fundamentos del Diseño Grafico.jpg" alt="Introducción a la Programación" class="img-fluid mx-auto d-block w-100">
       </div>
     </div>
   </div>
@@ -380,7 +422,7 @@ in Center for Training and Professional Development IT Education
 <!-- boton modal -->
 
 <a type="button" class="btn text-decoration-none border-0 text-dark" data-bs-toggle="modal" data-bs-target="#introMundoWeb">
-    Course "Introduction to the Web World" 12 hours dictated by
+    Course "<span class="fw-semibold">Introduction to the Web World</span>" 12 hours dictated by
     Training and Professional Development Center IT Education
 </a>
 
@@ -394,7 +436,7 @@ in Center for Training and Professional Development IT Education
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body w-100">
-        <img src="/PortfolioArgentinaPrograma/img/Certificado Introduccion al Mundo Web.jpg" alt="Introducción a la Programación" class="img-fluid mx-auto d-block w-100">
+        <img src="/img/Certificado Introduccion al Mundo Web.jpg" alt="Introducción a la Programación" class="img-fluid mx-auto d-block w-100">
       </div>
     </div>
   </div>
@@ -406,7 +448,7 @@ in Center for Training and Professional Development IT Education
 <!-- boton modal -->
 
 <a type="button" class="btn text-decoration-none border-0 text-dark" data-bs-toggle="modal" data-bs-target="#introLenguajeProgramacion">
-    Course "Introduction to Programming Language" 12 hours
+    Course " <span class="fw-semibold">Introduction to Programming Language</span>" 12 hours
     dictated by Training Center and Professional Development IT Education
 </a>
 
@@ -420,7 +462,7 @@ in Center for Training and Professional Development IT Education
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body w-100">
-        <img src="/PortfolioArgentinaPrograma/img/Certificado Introducción Lenguaje de Programación.jpg" alt="Introducción a la Programación" class="img-fluid mx-auto d-block w-100">
+        <img src="/img/Certificado Introducción Lenguaje de Programación.jpg" alt="Introducción a la Programación" class="img-fluid mx-auto d-block w-100">
       </div>
     </div>
   </div>
@@ -433,7 +475,7 @@ in Center for Training and Professional Development IT Education
 <!-- boton modal -->
 
 <a type="button" class="btn text-decoration-none border-0 text-dark" data-bs-toggle="modal" data-bs-target="#progJs">
-    Has successfully passed the 40 hours course "Programming with JavaScript"
+    Has successfully passed the 40 hours course "<span class="fw-semibold">Programming with JavaScript</span>"
     of the TELEFÓNICA MOVISTAR FOUNDATION
 </a>
 
@@ -447,19 +489,20 @@ in Center for Training and Professional Development IT Education
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body w-100">
-        <img src="/PortfolioArgentinaPrograma/img/FT AR - Programación con JavaScript.jpg" alt="Introducción a la Programación" class="img-fluid mx-auto d-block w-100">
+        <img src="/img/FT AR - Programación con JavaScript.jpg" alt="Introducción a la Programación" class="img-fluid mx-auto d-block w-100">
       </div>
     </div>
   </div>
 </div>
 
 <!-- fecha -->
-<h2 class="blockquote-footer my-2">2021</h2>
+<h2 class="blockquote-footer my-2">2009</h2>
 
 <!-- boton modal -->
 
 <a type="button" class="btn text-decoration-none border-0 text-dark" data-bs-toggle="modal" data-bs-target="#tecnicoImagenes">
-    Superior Technician in Images
+   
+   <span class="fw-semibold">Higher Technician in Photographic Images</span> 
     School of Artes Aplicadas Lino Enea Spilimbergo
 </a>
 
@@ -469,11 +512,11 @@ in Center for Training and Professional Development IT Education
   <div class="modal-dialog modal-fullscreen-sm-down">
     <div class="modal-content">
       <div class="modal-header">
-        <div class="modal-title" id="tecnicoImagenesModalLabel">2021</div>
+        <div class="modal-title" id="tecnicoImagenesModalLabel">2009</div>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body w-100">
-        <img src="/PortfolioArgentinaPrograma/img/Titulo_Fotografia_Carlos_Balbastroweb.jpg"Introducción a la Programación" class="img-fluid mx-auto d-block w-100">
+        <img src="/img/Titulo_Fotografia_Carlos_Balbastroweb.jpg"  class="img-fluid mx-auto d-block w-100">
       </div>
     </div>
   </div>
@@ -493,12 +536,12 @@ in Center for Training and Professional Development IT Education
 <div class="col-sm-6">
   <h1 class="text-center mx-5 border-bottom border-2 py-3">Portfolio</h1>
     <!-- fecha -->
-<h2 class="blockquote-footer my-2" id="working_progress_foto">2022</h2>
+<h2 class="blockquote-footer my-2" id="working_progress_foto">2023</h2>
 
 
 
 
-<a type="button" href="/PortfolioArgentinaPrograma/PortfolioFrontEnd/land_Photo.html" target="_blank" class="btn text-decoration-none border-0 text-dark">
+<a type="button" href="https://comfy-snickerdoodle-3addbb.netlify.app/index.html" target="_blank" class="btn text-decoration-none border-0 text-dark">
 Working Progres Landing Photo</a> 
 
 
@@ -510,51 +553,12 @@ Working Progres Landing Photo</a>
 
 <!-- fecha -->
 
-<h2 class="blockquote-footer my-2" id="working_progress_escMusica">2022</h2>
+<h2 class="blockquote-footer my-2" id="working_progress_escMusica">2023</h2>
 
 
 
-<a class="btn text-decoration-none border-0 text-dark" href="/PortfolioArgentinaPrograma/PortfolioFrontEnd/land_Diet.html" target="_blank">Working Progress Landing Diet</a>
+<a class="btn text-decoration-none border-0 text-dark" href="https://quiet-malabi-0c97b6.netlify.app/index.html" target="_blank">Landing Diet</a>
 
-
-
-
-<!-- fecha -->
-
-<h2 class="blockquote-footer my-2" id="working_progress_dietetica">2021</h2>
-
-
-<a type="button" href="/PortfolioArgentinaPrograma/PortfolioFrontEnd/land_Diet2.html" class="btn text-decoration-none border-0 text-dark" target="_blank">
-Working Progres Landing Diet 2
-</a>
-
-
-
-
-<!-- fecha -->
-
-<!-- <h2 class="blockquote-footer my-2">2021</h2>
-
-
-
-<a type="button" href="/PortfolioArgentinaPrograma/PortfolioFrontEnd/land_Productos.html" class="btn text-decoration-none border-0 text-dark" target="_blank">
-Workin Progres Landing Products
-</a> -->
-
-
-
-
-
-
-<!-- fecha -->
-
-<h2 class="blockquote-footer my-2">2021</h2>
-
-<!-- boton modal -->
-
-<a type="button" href="/PortfolioArgentinaPrograma/PortfolioFrontEnd/land_PHCarrusel.html" class="btn text-decoration-none border-0 text-dark" target="_blank">
-Working Progres Landing Page
-</a>
 
 
 
@@ -566,15 +570,15 @@ Working Progres Landing Page
 <div class="container mt-5">
   <h2 class="text-center mt-5  border-bottom border-2 ">Skills</h2>
   <dl class="mt-5">
-    <dt class="mb-3">HTML - CSS - JS</dt>
+    <dt class="mb-3">HTML - CSS - JS - TypeScript</dt>
     <dd class="mb-3">Bootstrap</dd>
     <dt class="mb-3">Figma</dt>
-    <dd class="mb-3">TypeScript</dd>
+    <dd class="mb-3">Angular</dd>
     <dt class="mb-3">Java</dt>
     <dd class="mb-3">Netbeans</dd>
     <dt class="mb-3">Visual Studio Code</dt>    
     <dd class="mb-3">Adobe Photoshop</dd>
-    <dt class="mb-3">Adobe Photoshop Lightroom</dt>   
+    <dt class="mb-3">Adobe Photoshop Lightroom</dt>  
 
   <h2 class="text-center mt-5  border-bottom border-2 ">Languages</h2>
 
@@ -601,41 +605,46 @@ Working Progres Landing Page
   <h2 class="text-center mt-5  border-bottom border-2 ">Contact</h2>
   <form class="mt-1">
     <div class="mb-3">
+
+        <div class="mb-1">
+            <label for="exampleFormControlInput1" class="form-label mt-3 fw-semibold text-secondary">Complete Name</label>
+            <input type="text"  name="name" class="form-control"" placeholder="name" required>
+          </div>
     
 
-      <label for="exampleFormControlInput1" class="form-label mt-5">Email </label>
+      <label for="exampleFormControlInput1" class="form-label mt-3 fw-semibold text-secondary">Email </label>
       <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@email.com">
     </div>
     <div class="mb-3">
-      <label for="exampleFormControlTextarea1" class="form-label">
+      <label for="exampleFormControlTextarea1" class="form-label fw-semibold text-secondary">
         Consult Budgets</label>
       <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Write your question here, we will contact you shortly..."></textarea>
 
       <fieldset class="row mb-3">
-        <legend class="col-form-label col-sm-2 pt-0">
-          Inquiries</legend>
+        <!-- <legend class="col-form-label col-sm-2 pt-0">
+          Inquiries</legend> -->
         <div class="col-sm-10">
-          <div class="form-check">
+          <!-- <div class="form-check">
             <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
             <label class="form-check-label" for="gridRadios1">
               Static Web Design
             </label>
-          </div>
-          <div class="form-check">
+          </div> -->
+          <!-- <div class="form-check">
             <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
             <label class="form-check-label" for="gridRadios2">
               Dinamic Web Design
             </label>
-          </div>
-          <div class="form-check disabled">
+          </div> -->
+          <!-- <div class="form-check disabled">
             <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
             <label class="form-check-label" for="gridRadios3">
               Design BackEnd
             </label>
-          </div>
+          </div> -->
         </div>
       </fieldset>
-      <div class="row mb-3">
+      <!-- <div class="row mb-3">
         <div class="col-sm-10 offset-sm-2">
           <div class="form-check">
             <input class="form-check-input" type="checkbox" id="gridCheck1">
@@ -644,10 +653,10 @@ Working Progres Landing Page
             </label>
           </div>
         </div>
-    </div>
+    </div> -->
   
   
-    <button type="submit" class="btn btn-outline-warning d-block w-100 mx-auto text-dark">Enviar</button>
+    <button type="submit" class="btn btn-outline-warning d-block w-100 mx-auto text-dark">Submit</button>
   </form>
   
 
@@ -697,10 +706,10 @@ Working Progres Landing Page
   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
     <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
   </svg></a>
-<a  class="icon-contacto text-decoration-none m-2 text-white" href="https://www.facebook.com/carloseduardo.balbastro" target="_blank">
+<!-- <a  class="icon-contacto text-decoration-none m-2 text-white" href="https://www.facebook.com/carloseduardo.balbastro" target="_blank">
   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
     <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
-  </svg></a>
+  </svg></a> -->
   <a  class="icon-contacto text-decoration-none m-2 text-white" href="https://www.whatsapp.com/?lang=es" target="_blank">
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
       <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
@@ -708,6 +717,12 @@ Working Progres Landing Page
       <a class="navbar-brand m-2" href="https://github.com/CarlosEduardoBalbastro"> <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-github text-white" viewBox="0 0 16 16">
       <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
     </svg></a>
+
+    <a href="#home" class="text-decoration-none text-white">
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+        </svg>
+      </a>
   
 </div>
   
